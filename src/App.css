@@ -1,0 +1,88 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header,
+footer {
+  height: 3rem;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+header nav a.active {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  background-color: #fefefe;
+  padding: 2rem;
+}
+
+form#loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+form#loginForm input {
+  padding: 0.5rem;
+  width: 300px;
+  height: 30px;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  background-color: #eee;
+}
+
+form#loginForm button {
+  padding: 0.5rem;
+
+  width: 300px;
+  height: 30px;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+
+.errorMessage {
+  color: red;
+}
